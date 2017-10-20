@@ -5,7 +5,7 @@ export default class Logo extends Component {
   render() {
     return (
       <div className='logo'>
-        <h1 className='logopic'>MeetMe</h1>
+        <img src='./logo.png' />
       </div>
     );
   }
