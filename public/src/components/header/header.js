@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 // import Logo from './logo/logo';
-import MyPics from './myPics/myPics';
+//import MyPics from './myPics/myPics';
+import Navb from './navigator/navbar';
 import './header.css';
 
 export default class Header extends Component {
   render() {
-  // 	var divStyle = {
-  // 		display: 'flex',
-  //     backgroud: 'cadetblue'
-	// };
-
     return (
       <div className='header'>
-	       <MyPics/>
+         <Navb />
       </div>
     );
   }
