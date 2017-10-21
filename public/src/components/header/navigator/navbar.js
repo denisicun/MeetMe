@@ -27,7 +27,7 @@ export default class Navb extends Component {
           <NavbarBrand href="/">
             <MyPics />
             <Animated animationIn="rotateInDownLeft">
-              Denis Sicun - That is me up there :)
+              Denis Sicun - And I&#39;m DANGEROUS :)
             </Animated>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />

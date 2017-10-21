@@ -1,3 +1,7 @@
 .nav-link.active{
   color: white !important;
 }
+
+NavbarBrand{
+  font-size: 10px !important;
+}
