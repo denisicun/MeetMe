@@ -35,10 +35,10 @@ export default class Navb extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to='/'><NavLink href="#" active={true}>Welcome</NavLink></Link>
+                <Link to='/'><NavLink href="" active={true}>Welcome</NavLink></Link>
               </NavItem>
                 <NavItem>
-                  <NavLink href="">Who am I?</NavLink>
+                  <Link to='/basic'><NavLink href="">Who am I?</NavLink></Link>
                 </NavItem>
                 <NavItem>
                   <NavLink href="">Military Service</NavLink>
