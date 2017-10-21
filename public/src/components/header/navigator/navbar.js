@@ -4,7 +4,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
 import 'bootstrap/dist/css/bootstrap.css';
 import './navbar.css';
 import {Animated} from "react-animated-css";
-
+import { Link } from 'react-router-dom'
 
 export default class Navb extends Component {
   constructor(props) {
@@ -35,7 +35,7 @@ export default class Navb extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="" active={true}>Welcome</NavLink>
+                <Link to='/'><NavLink href="#" active={true}>Welcome</NavLink></Link>
               </NavItem>
                 <NavItem>
                   <NavLink href="">Who am I?</NavLink>
