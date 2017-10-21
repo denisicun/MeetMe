@@ -1,1 +1,1 @@
-:)
+This is an awesome site to show myself and a bit of my skills
