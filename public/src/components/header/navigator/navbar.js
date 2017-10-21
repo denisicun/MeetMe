@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import MyPics from '../myPics/myPics';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import './navbar.css'
+import './navbar.css';
+import {Animated} from "react-animated-css";
+
 
 export default class Navb extends Component {
   constructor(props) {
@@ -22,27 +24,37 @@ export default class Navb extends Component {
     return (
       <div>
         <Navbar color="faded" light expand="md">
-          <NavbarBrand href="/"><MyPics /> Denis Sicun </NavbarBrand>
+          <NavbarBrand href="/">
+            <MyPics />
+            <Animated animationIn="rotateInDownLeft">
+              Denis Sicun - That is me up there :)
+            </Animated>
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink href="" active={true}>Welcome</NavLink>
-            </NavItem>
+          <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="">Who am I?</NavLink>
+                <NavLink href="" active={true}>Welcome</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink href="">Military Service</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="">Special Stuff</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="">Articals</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
+                <NavItem>
+                  <NavLink href="">Who am I?</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="">Military Service</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="">Special Stuff</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="">Articals</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="">CV files</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Animated>
         </Navbar>
       </div>
     );
