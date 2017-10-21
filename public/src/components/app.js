@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header/header';
 import Content from './content/content';
+import Footer from './footer/footer';
 import './app.css';
 
 export default class App extends Component {
@@ -9,6 +10,7 @@ export default class App extends Component {
       <div className='app'>
         <Header/>
         <Content />
+        <Footer />
       </div>
     );
   }
