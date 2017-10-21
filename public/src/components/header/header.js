@@ -7,9 +7,11 @@ import {Animated} from "react-animated-css";
 export default class Header extends Component {
   render() {
     return (
-      <div className='header'>
-         <Navb />
-      </div>
+      <Animated animationIn="fadeIn">
+        <div className='header'>
+           <Navb />
+        </div>
+      </Animated>
     );
   }
 }
